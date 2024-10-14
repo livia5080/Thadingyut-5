@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.col-6 {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+.col-6 {
+    margin-top: 20px;
+}
+.container {
+    justify-content: center;
+    align-items: center;
+}
+.paragraph {
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.col-10 {
+    border: 1px solid indigo;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(170, 159, 159);
+}
+.heading1 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+/*Artribute selector*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
